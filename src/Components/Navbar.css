@@ -84,7 +84,7 @@ nav ul li a:hover::after {
     position: absolute;
     right: 3rem;
     top: 2.4rem;
-    animation: headh1animate 2s ease-in-out;
+    animation: headh1animate 2s ease-in;
     cursor: pointer;
 }
 

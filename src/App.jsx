@@ -2,19 +2,20 @@ import { useState } from 'react'
 import './App.css'
 import React from 'react'
 import Navbar from './Components/Navbar'
-import Search from './Components/Search'
+import Headline from './Components/Headline'
+import SliderHero from './Components/SliderHero'
+
 
 function App() {
-
+   
+ 
 
   return (
     <>
-     <div className="headline">
-       <div className="headlinetxt">At Scentra we provide free delivery | 100% return back policy </div>
-    </div> 
+    <Headline />  
     <Navbar />
-     {/* <h1>SCENTRA </h1> */}
-      {/* <Search /> */}
+    <SliderHero />
+           
       
 
     </>

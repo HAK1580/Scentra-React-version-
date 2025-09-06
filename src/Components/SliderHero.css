@@ -1,0 +1,102 @@
+.slider {
+  margin: 2rem auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+    animation: animateheaderdiv 2s ease-in;
+  height: 1080px; /* ek fixed height de, warna slider collapse karega */
+
+}
+@keyframes animateheaderdiv {
+  from {
+    transform: translateX(-97%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover; /* images resize ke liye */
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+  z-index: 1;
+}
+.herobtn {
+  padding: 16px 78px;
+  background-color: rgba(0, 0, 0, 0.815);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.797);
+  border: 1px solid #d4af3767;
+  font-size: 1.69rem;
+  letter-spacing: 1.1px;
+  border-radius: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+
+}
+.hero{
+    position: relative;
+}
+
+.herobtn:hover {
+  background-color: #d4af37a7;
+  /* hover state */
+  color: #000000;
+}
+
+.headlinetxt2 {
+  /* border: 2px solid red ; */
+  display: inline-flex;
+  animation: headline2 11s linear infinite;
+  scroll-behavior: smooth;
+  gap: 10rem;
+  
+}
+.headline-2 {
+  /* border: 1px solid  ; */
+  /* margin: 5rem 0px 0px 0px; */
+  scroll-behavior: smooth;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+
+.headline-2 h3 {
+  font-size: 2.4rem;
+  ;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  font-weight: 100;
+
+}
+
+@keyframes headline2 {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+
+}

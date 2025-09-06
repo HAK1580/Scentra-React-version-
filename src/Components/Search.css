@@ -2,15 +2,18 @@
   position: relative;
   top: -6.51rem;
   margin: -2rem auto;
+  overflow:hidden;
   height: 110vh;
   background-color: rgba(255, 255, 255, 0.238);
+  
 }
 .search-box{
     /* border: 2px solid red ; */
     display: inline;
     width: 100%;
     position: absolute;
-    top: 2rem;
+    top: 3rem;
+    overflow-y: hidden;
     display: flex;
     gap: 1rem;
     justify-content: center;
