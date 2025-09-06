@@ -1,0 +1,144 @@
+nav {
+    /* border: 2px solid red; */
+    position: relative;
+}
+
+nav ul li a {
+    position: relative;
+    display: inline-block;
+    text-decoration-line: none;
+    color: white;
+    font-size: 1.27rem;
+    letter-spacing: 0.1em;
+    padding-bottom: 4px;
+}
+
+nav ul {
+    animation: headh1animate 2s ease-in-out;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 0;
+    background-color: white;
+    transition: width 0.35s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-left {
+
+    position: relative;
+    margin-left: 1.31rem;
+    left: 25vh;
+}
+
+.nav-right {
+    margin-right: 1.31rem;
+    position: relative;
+    right: 25vh;
+}
+
+.logo {
+    position: absolute;
+    left: -77px;
+    top: -27%;
+}
+
+.scentra-middle {
+
+    font-size: 4.62rem;
+    color: #e8d5a9;
+    letter-spacing: 0.8px;
+    text-align: center;
+    margin: 10px auto;
+    font-weight: 100;
+
+
+}
+
+@keyframes headh1animate {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.search-icon {
+    position: absolute;
+    right: 3rem;
+    top: 2.4rem;
+    animation: headh1animate 2s ease-in-out;
+    cursor: pointer;
+}
+
+
+
+/* base layout (no animation by default) */
+.main-nav {
+  position: relative;
+}
+
+/* default ul styles (no animation here) */
+.main-nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* play animation ONLY when .play exists on nav */
+.main-nav.play ul {
+  animation: headh1animate 2s ease-in-out;
+}
+
+/* same — only animate the icon when .play is present */
+.main-nav.play .search-icon {
+  animation: headh1animate 2s ease-in-out;
+}
+
+/* keyframes unchanged */
+@keyframes headh1animate {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0%); }
+}
+
+/* Hide nav visually when search is open without unmounting it */
+.nav-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+/* Search wrapper show/hide */
+.search-wrapper.hide {
+  display: none;
+}
+.search-wrapper.show {
+  display: block;
+  animation: fadeIn 160ms ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* your other rules (logo, .nav-left, .scentra-middle, etc.) can stay the same,
+   but remove any global `nav ul { animation: ... }` or `.search-icon { animation: ... }` lines */
