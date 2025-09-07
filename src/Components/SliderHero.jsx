@@ -7,9 +7,9 @@ const SliderHero = ({search,setSearch}) => {
 
   
  const imgs=[
-    "IMGS/Banners/1.jpg",
-    "IMGS/Banners/2.jpg",
-    "IMGS/Banners/4.jpg",
+    "/Scentra-React-version-/IMGS/Banners/1.jpg",
+    "/Scentra-React-version-/IMGS/Banners/2.jpg",
+    "/Scentra-React-version-/IMGS/Banners/4.jpg",
   ]
  
   const[current,setCurrent]=useState(0)

@@ -55,10 +55,10 @@ const Navbar = () => {
           <img
             className="logo"
             width={300}
-            src="IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
+            src="/Scentra-React-version-/IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
             alt=""
           />
-          <img className="hamburger" src="IMGS/icons/hamburger.svg" alt="" />
+          <img className="hamburger" src="/Scentra-React-version-/IMGS/icons/hamburger.svg" alt="" />
 
       
 
@@ -84,7 +84,7 @@ const Navbar = () => {
           onClick={() => setSearch(!search)}
           className="search-icon"
           width={32}
-          src="IMGS/icons/search.svg"
+          src="/Scentra-React-version-/IMGS/icons/search.svg"
           alt=""
         />
 
