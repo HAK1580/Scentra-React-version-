@@ -119,9 +119,15 @@
     width: 110%;
   }
 }
+.slider img{
+  width: 110%;
+}
 
 @media  only screen and (max-width:620px) {
   .hero{
+    width: 180%;
+  }
+  .slider img{
     width: 180%;
   }
   
