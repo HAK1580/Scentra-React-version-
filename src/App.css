@@ -46,13 +46,12 @@ body {
 /* banner done here  */
 @media  only screen and (max-width:620px) {
   .headline{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
-    /* border: 2px solid red ; */
-    /* width: 180%; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow: hidden;
-    margin: 0px auto 32px auto;
-    padding: 6px 0px;
+    margin: 0px auto 35px auto;
+    padding: 4px 0px;
   }
   
 

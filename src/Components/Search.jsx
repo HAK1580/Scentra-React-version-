@@ -11,7 +11,7 @@ const Search = ({search,setSearch}) => {
  <div className="search-icons">
 
  <img width={35} src="/Scentra-React-version-/IMGS/icons/search.svg" alt="" />
- <img  onClick={()=>setSearch(!search)} width={45} src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />
+ <img className='cross-img'  onClick={()=>setSearch(!search)}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />
  </div>
 
 

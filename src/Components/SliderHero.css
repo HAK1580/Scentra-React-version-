@@ -120,9 +120,45 @@
 }
 
 @media  only screen and (max-width:620px) {
-  .hero{
-    /* width: 180%; */
+
+  .slider{
+    height: 450px;
+    /* border: 2px solid red ; */
+  }
+  .herobtn{
+    font-size: 0.7rem;
+    border-radius:4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    padding: 2px 10px;
+  }
+  .herobtns{
+    top: 40%;
+    left: 3.5%;
   }
  
 
 }
+
+@media only screen and (max-width:420px){
+ 
+  .slider{
+    height: 450px;
+    /* border: 2px solid red ; */
+  }
+  .herobtn{
+    font-size: 0.7rem;
+    border-radius:4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.2px;
+    padding: 2px 10px;
+  }
+  .herobtns{
+    top: 32.5%;
+    left: 3.5%;
+  }
+  
+
+}
+
+ 

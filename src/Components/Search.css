@@ -1,11 +1,14 @@
 .search-box-div {
-  position: relative;
-  top: -6.51rem;
+    position: relative;
+    top: -6.51rem;
   margin: -2rem auto;
   overflow:hidden;
   height: 110vh;
   background-color: rgba(255, 255, 255, 0.238);
   
+}
+.cross-img{
+ width: 45px;
 }
 .search-box{
     /* border: 2px solid red ; */
@@ -43,9 +46,29 @@
 }
 @media only screen and (max-width:620px){
     .search-box-div{
-        top:-5.15rem;
-
+        top:-3.95rem;
     }
+ .search-here{
+  width: 80%;
+  padding: 0.4rem 1rem;
+ }
+ .search-icons{
+    gap: 0.3rem;
+ }
+ .search-icons img{
+  width: 30px;
+ }
+ .search-icons .cross-img{
+  width: 35px;
+ }
+ .search-box{
+    /* border: 2px solid red ; */
+    width: 98%;
+    margin: 0px 0.5rem;
+    gap: 0.5rem;
+  
+ }
+
 }
 @media only screen and (min-width:620px) and (max-width:768px){
     .search-box-div{
@@ -63,23 +86,29 @@
 }
 @media only screen and (max-width:420px){
   .search-box-div{
-    top: -3.1rem;
+    top: -3.65rem;
   }
   .search-box{
     /* border: 2px solid red ; */
-    gap: 0.5rem;
+    width: 98%;
+    margin: 0px 0.5rem;
+    gap: 0.4rem;
   }
   .search-icons{
-    gap: 0.5rem;
+    gap: 0.3rem;
   }
 
   .search-here{
-    width: 70%;
+    width: 98%;
     font-size: 0.9rem;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
   }
   .search-icons img{
     width:25px;
   }
+  .search-icons .cross-img{
+    width: 30px;
+  }
   
 }
+
