@@ -10,7 +10,7 @@ html{
 body {
   background-color: #0F0B07;
   color: whitesmoke;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .headline {
     /* border: 2px solid red ; */
