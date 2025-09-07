@@ -41,3 +41,29 @@
     display: flex;
     gap: 1rem;
 }
+@media only screen and (max-width:620px){
+    .search-box-div{
+        top:-5.15rem;
+        width: 180%;
+    }
+}
+@media only screen and (min-width:620px) and (max-width:768px){
+    .search-box-div{
+        top:-6.27rem;
+        width: 110%;
+    }
+    .search-box{
+        top: 2.5rem;
+    }
+    .search-here{
+        width: 70%;
+        font-size: 1rem;
+        padding: 0.6rem 0.6rem 0.6rem 1rem;
+    }
+}
+@media only screen and (max-width:420px){
+  .search-box-div{
+    top: -4.37rem;
+  }
+  
+}

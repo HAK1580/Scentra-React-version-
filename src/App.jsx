@@ -15,6 +15,7 @@ function App() {
     <Headline />  
     <Navbar />
     <SliderHero />
+       {/* focus on shopping now  */}
            
       
 

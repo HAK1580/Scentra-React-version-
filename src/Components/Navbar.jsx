@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import Search from "./Search";
 
+import SliderHero from "./SliderHero";
+
 const Navbar = () => {
   const [search, setSearch] = useState(false);
 
@@ -49,12 +51,16 @@ const Navbar = () => {
         ref={navRef}
         className={`main-nav ${playAnimation ? "play" : ""} ${search ? "nav-hidden" : ""}`}
       >
-        <img
-          className="logo"
-          width={300}
-          src="IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
-          alt=""
-        />
+        
+          <img
+            className="logo"
+            width={300}
+            src="IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
+            alt=""
+          />
+          <img className="hamburger" src="IMGS/icons/hamburger.svg" alt="" />
+
+      
 
         <ul>
           <li className="nav-left">
@@ -72,19 +78,24 @@ const Navbar = () => {
           </li>
         </ul>
 
+
+
         <img
-          onClick={() => setSearch(true)}
+          onClick={() => setSearch(!search)}
           className="search-icon"
           width={32}
           src="IMGS/icons/search.svg"
           alt=""
         />
+
       </nav>
 
       {/* search wrapper — show/hide via class (keeps component mounted) */}
       <div className={`search-wrapper ${search ? "show" : "hide"}`}>
         <Search search={search} setSearch={setSearch} />
+
       </div>
+
     </>
   );
 };

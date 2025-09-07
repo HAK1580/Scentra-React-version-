@@ -139,6 +139,116 @@ nav ul li a:hover::after {
   from { opacity: 0; transform: translateY(-6px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
+.hamburger{
+  position: absolute;
+  left: 0.5rem;
+  top: 0.74rem;
+  width: 45px;
+  display: none;
+}
 /* your other rules (logo, .nav-left, .scentra-middle, etc.) can stay the same,
    but remove any global `nav ul { animation: ... }` or `.search-icon { animation: ... }` lines */
+@media only screen and (max-width:620px) {
+  nav ul{
+    /* gap: 12rem; */
+    display: flex;
+    justify-content: center;
+  }
+  nav{
+    /* border: 2px solid red ; */
+    width: 180%;
+  }
+  .search-icon{
+    right: 2.4rem;
+    top: 1.4rem;
+  }
+  .nav-left{
+    /* margin: 0px 0px 0px 1rem; */
+     /* opacity: 0; */
+     display: none;
+  }
+  .nav-right{
+    display: none;
+  }
+  .scentra-middle{
+    margin: 0px 15rem;
+    font-size: 4.5rem;
+    
+  }
+  .hamburger{
+    display: block;
+  }
+  .logo{
+    width: 220px;
+    left:2rem;
+    top:-20px;
+  }
+
+}
+@media  only screen and (max-width:420px) {
+  .logo{ 
+    width: 170px;
+    left:1.6rem;
+  
+  }
+  .hamburger{
+    width: 40px;
+    top:0.65rem
+  }
+  .scentra-middle{
+    font-size: 3.8rem;
+  }
+   
+}
+@media only screen and (max-width:350px){
+  .scentra-middle{
+    font-size: 3rem;
+  }
+  .search-icon{
+  width: 27px;
+  top: 1.1rem;
+  } 
+  .hamburger{
+    width: 30px;
+  }
+  .logo{
+    width: 145px;
+    top: -1rem;
+  }
+
+}
+
+@media only screen and (min-width:620px) and (max-width:768px){
+  .nav-left{
+    display: none;
+  }
+  .nav-right{
+    display: none;
+  }
+  nav{
+    width: 110%;
+  }
+
+  .hamburger{
+    display: block;
+    width: 40px;
+    top:1.6rem;
+    left: 0.5rem;
+  }
+  .logo{
+    width: 150px;
+    left: 1rem;
+    top: 0.1rem;
+  }
+  .scentra-middle{
+    font-size: 4.3rem;
+    
+  }
+  .search-icon{
+    top: 2.3rem;
+    width: 30px;
+  }
+
+
+
+}

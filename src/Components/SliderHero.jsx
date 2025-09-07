@@ -2,7 +2,7 @@ import React from 'react'
 import './SliderHero.css'
 import { useState,useEffect } from 'react'
 
-const SliderHero = () => {
+const SliderHero = ({search,setSearch}) => {
 
 
   
@@ -29,13 +29,16 @@ const SliderHero = () => {
   },[current,imgs.length])
   
   return (
-    <>
+    <div >
     <div className="hero">
     <div className="slider">
         {imgs.map((image,i)=>  <img key={i} src={image} alt="" className={`${i===current?"active":""}`}/> )}
       
     </div>
+    <div className="herobtns">
       <button className='herobtn'  >Buy Scents</button>
+
+    </div>
   
     </div>
     
@@ -73,9 +76,9 @@ const SliderHero = () => {
     </div>
     
   
+  
 
-
-    </>
+    </div>
   )
 }
 

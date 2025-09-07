@@ -43,3 +43,33 @@ body {
   }
 }
 /* banner done here  */
+@media  only screen and (max-width:620px) {
+  .headline{
+    font-size: 1rem;
+    font-weight: bold;
+    /* border: 2px solid red ; */
+    width: 180%;
+    overflow: hidden;
+    margin: 0px auto 32px auto;
+    padding: 6px 0px;
+  }
+  
+
+}
+@media only screen and (max-width:420px){
+  .headline{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+}
+@media only screen and (min-width:620px) and (max-width:768px){
+  .headline{
+    padding: 8px 0px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 110%;
+  }
+
+  
+}

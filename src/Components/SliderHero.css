@@ -3,10 +3,14 @@
   display: flex;
   overflow: hidden;
   position: relative;
-    animation: animateheaderdiv 2s ease-in;
-  height: 1080px; /* ek fixed height de, warna slider collapse karega */
-
-}
+    animation: animateheaderdiv 2s ease-in; 
+    height: 1080px; /* ek fixed height de, warna slider collapse karega */
+    
+  }
+  .herobtns{
+    animation: animateheaderdiv 2s ease-in; 
+  
+  }
 @keyframes animateheaderdiv {
   from {
     transform: translateX(-97%);
@@ -33,6 +37,15 @@
   opacity: 1;
   z-index: 1;
 }
+.herobtns{
+  /* border: 2px solid red; */
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+}
 .herobtn {
   padding: 16px 78px;
   background-color: rgba(0, 0, 0, 0.815);
@@ -46,9 +59,6 @@
   border-radius: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   cursor: pointer;
-  position: absolute;
-  top: 57%;
-  left: 5%;
   z-index: 1;
   transition: all 0.5s ease-out;
 
@@ -99,4 +109,7 @@
     transform: translateX(0%);
   }
 
+}
+.hero-hidden{
+  display: none;
 }
