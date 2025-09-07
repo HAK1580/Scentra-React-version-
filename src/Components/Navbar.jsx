@@ -69,7 +69,7 @@ const Navbar = () => {
           <li className="nav-left">
             <a href="#ourcollection">ALL COLLECTIONS</a>
           </li>
-          <li className="scentra-middle">SCENTRA</li>
+          <li className="scentra-middle">SCENTRAa</li>
           <li className="nav-right">
             <a href="#home">ABOUT US</a>
           </li>
