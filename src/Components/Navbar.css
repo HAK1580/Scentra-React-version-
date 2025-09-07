@@ -187,21 +187,21 @@ nav ul li a:hover::after {
 }
 @media  only screen and (max-width:420px) {
   .logo{ 
-    width: 90px;
-    left:0.65rem;
-    top: -0.3rem;
+    width:90px;
+    left:0.85rem;
+    top: -1rem;
   }
   .search-icon{
     width: 22px;
     top: 0.9rem;
-    right: 1.8rem;
+    right: 1.1rem;
   }
   .hamburger{
     width: 22px;
     top:0.85rem
   }
   .scentra-middle{
-    font-size: 2.85rem;
+    font-size: 2.95rem;
   }
    
 }
