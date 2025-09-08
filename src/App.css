@@ -58,8 +58,8 @@ body {
 }
 @media only screen and (max-width:420px){
   .headline{
-    font-size: 0.7rem;
-    padding: 4px 0px;
+    font-size: 0.85rem;
+    padding: 10px 0px;
     font-weight: bold;
   }
   
@@ -67,10 +67,39 @@ body {
 @media only screen and (min-width:620px) and (max-width:768px){
   .headline{
     padding: 8px 0px;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: bold;
     /* width: 110%; */
   }
+}
 
-  
+/* HABRUGER CSS HERE */
+
+.menu{
+  /* border: 2px solid red ; */
+  max-width:85vw;
+  height: 80vh;
+  background-color: rgba(255, 255, 255, 0.238);
+  transition: all 0.5s ease-in !important; 
+  pointer-events: none;
+  z-index: 100;
+}
+.menu ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.menu ul li{
+  list-style-type: none;
+}
+.menu ul li a{
+  letter-spacing:2px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  display: block;
 }

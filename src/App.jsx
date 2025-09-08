@@ -4,6 +4,7 @@ import React from 'react'
 import Navbar from './Components/Navbar'
 import Headline from './Components/Headline'
 import SliderHero from './Components/SliderHero'
+import Hamburger from './Components/Hamburger'
 
 
 function App() {
@@ -13,9 +14,9 @@ function App() {
   return (
     <>
     <Headline />  
-    <Navbar />
-    <SliderHero />
-       {/* focus on shopping now  */}
+     <Navbar />
+    <SliderHero /> 
+    
            
       
 

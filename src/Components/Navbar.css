@@ -392,3 +392,14 @@ nav ul li a:hover::after {
     right:10px;
   }
 }
+
+/* HAMBURGUR CROSS  */
+.cross-menue{
+  width: 30px;
+}
+.hampic{
+  /* display: none; */
+}
+.hamburger{
+  
+}

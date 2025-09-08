@@ -177,50 +177,55 @@
   
 }
 
-@media only screen and (max-width:420px){
+@media only screen and (max-width:700px){
  .hero{
   margin: 1rem auto;
  }
   .slider{
     height:700px;
-    /* border: 2px solid red ; */
+  
   }
   .slider img{
     height: 57vh;
-    /* border: 2px solid red ; */
+  
    object-fit: cover;
-   object-position: -2.5rem -1rem;
+   object-position: -1.8rem -1rem;
 
   }
   .herobtn{
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    border-radius:4px;
+    border-radius:6px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 0.4px;
-    padding: 9px 26px;
+    padding: 8px 20px;
   }
   .herobtns{
-    top: 45.5%;
-    left:2%;
+    top: 35.5%;
+    left:1.5%;
   }
 }
-@media only  screen and (min-width:377px) and (max-width:415px) {
+
+
+@media only  screen and (min-width:377px) and (max-width:420px) {
   .hero{
     margin: 1rem auto;
+  }
+  .slider img{
+    object-position: -1.5rem -1rem;
   }
   .slider{
     height:750px;
     /* border: 2px solid red ; */
   }
   .herobtns{
-    top: 41.5%;
-    left:1.5%;
+    top: 33.5%;
+    left:2%;
   }
   .herobtn{
-    font-size: 1rem;
+    font-size: 1.1rem;
     border-radius: 6px;
-    padding: 9px 26px ;
+    padding: 8px 24px ;
   }
 }
 @media only screen and (min-width:300px) and (max-width:325px){
@@ -235,7 +240,7 @@
   }
   .herobtn{
     padding: 6px 20px;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
   }
   .herobtns{
     top: 42.5%;
@@ -256,7 +261,7 @@
   }
   .herobtn{
     padding: 12px 26px;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     border-radius: 6px;
   }
   .herobtns{
@@ -277,8 +282,8 @@
   }
   .herobtn{
     padding: 6px 24px;
-    font-size: 0.95rem;
-  padding: 9px 26px;
+    font-size: 1.1rem;
+  padding: 8px 23px;
   border-radius: 6px;
 
   }
@@ -298,12 +303,12 @@
     margin: 1rem auto;
   }
   .herobtns{
-    top: 32%;
+    top: 37.5%;
   }
   .herobtn{
     border-radius: 6px;
-    padding: 10px 22px;
-    font-size: 1rem;
+    padding: 8px 20px;
+    font-size: 1.12rem;
   }
 }
 /* RESPONSIVENESS FOR LARGE SCREENS */

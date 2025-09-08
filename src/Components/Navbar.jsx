@@ -1,11 +1,18 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import Search from "./Search";
-
+import  Hamburger from "./Hamburger";
 import SliderHero from "./SliderHero";
+
 
 const Navbar = () => {
   const [search, setSearch] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function handleClick() {
+    
+    setMenuOpen(!menuOpen);
+  }
 
   // playAnimation = true only while we want the intro animation to run
   const [playAnimation, setPlayAnimation] = useState(true);
@@ -49,7 +56,8 @@ const Navbar = () => {
       {/* keep nav mounted — toggle visibility via class */}
       <nav
         ref={navRef}
-        className={`main-nav ${playAnimation ? "play" : ""} ${search ? "nav-hidden" : ""}`}
+        className={`main-nav ${(playAnimation) ? "play" : ""} ${search ? "nav-hidden" : ""}`}
+
       >
         
           <img
@@ -58,7 +66,15 @@ const Navbar = () => {
             src="/Scentra-React-version-/IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
             alt=""
           />
-          <img className="hamburger" src="/Scentra-React-version-/IMGS/icons/hamburger.svg" alt="" />
+          
+    {menuOpen &&
+<img onClick={handleClick} className={`hamburger cross-menue`}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />  
+
+    }
+           
+ {!menuOpen&&
+    <img onClick={handleClick}  className={`hamburger`} src="/Scentra-React-version-/IMGS/icons/hamburger.svg" alt="" /> 
+ }
 
       
 
@@ -87,14 +103,19 @@ const Navbar = () => {
           src="/Scentra-React-version-/IMGS/icons/search.svg"
           alt=""
         />
+      
+     
 
       </nav>
+          {menuOpen ? <Hamburger    /> :null  }
 
       {/* search wrapper — show/hide via class (keeps component mounted) */}
       <div className={`search-wrapper ${search ? "show" : "hide"}`}>
         <Search search={search} setSearch={setSearch} />
 
       </div>
+    
+  
 
     </>
   );
