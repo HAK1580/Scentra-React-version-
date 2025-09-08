@@ -116,7 +116,7 @@
 @media only screen and (min-width:620px) and (max-width:768px){
   
    .hero{
-    margin: 0rem auto;
+    margin: 1rem auto;
    }
     .slider{
       height:800px;
@@ -149,7 +149,7 @@
 @media  only screen and (max-width:620px) {
 
  .hero{
-  margin: 0rem auto;
+  margin: 1rem auto;
  }
   .slider{
     height:800px;
@@ -179,7 +179,7 @@
 
 @media only screen and (max-width:420px){
  .hero{
-  margin: 0rem auto;
+  margin: 1rem auto;
  }
   .slider{
     height:700px;
@@ -193,7 +193,7 @@
 
   }
   .herobtn{
-    font-size: 0.91rem;
+    font-size: 0.95rem;
     font-weight: 400;
     border-radius:4px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -206,7 +206,9 @@
   }
 }
 @media only  screen and (min-width:377px) and (max-width:415px) {
-  
+  .hero{
+    margin: 1rem auto;
+  }
   .slider{
     height:750px;
     /* border: 2px solid red ; */
@@ -227,11 +229,13 @@
     /* border: 2px solid red ; */
    object-fit: cover;
    object-position: -1.2rem -1rem;
-
+  }
+  .hero{
+    margin: 1rem auto;
   }
   .herobtn{
     padding: 6px 20px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
   .herobtns{
     top: 42.5%;
@@ -241,7 +245,7 @@
 }
 @media only screen and (min-width:325px) and (max-width:360px){
   .hero{
-    margin: 0rem auto;
+    margin: 1rem auto;
   }
 
   .slider img{
@@ -251,8 +255,8 @@
     object-position: -1.8rem -1rem;
   }
   .herobtn{
-    padding: 9px 26px;
-    font-size: 0.85rem;
+    padding: 12px 26px;
+    font-size: 0.95rem;
     border-radius: 6px;
   }
   .herobtns{
@@ -269,7 +273,7 @@
     
   }
   .hero{
-    margin: 0rem auto;
+    margin: 1rem auto;
   }
   .herobtn{
     padding: 6px 24px;
@@ -290,12 +294,74 @@
     object-position: -1.5rem -1rem;
     
   }
+  .hero{
+    margin: 1rem auto;
+  }
   .herobtns{
     top: 32%;
   }
   .herobtn{
     border-radius: 6px;
-    padding: 8px 22px;
+    padding: 10px 22px;
     font-size: 1rem;
   }
+}
+/* RESPONSIVENESS FOR LARGE SCREENS */
+
+@media only screen and (min-width:1220px) and (max-width:1440px){
+  
+  .herobtns{
+    top: 51%;
+    left:4.5%;
+  }
+  .herobtn{
+    font-size: 1.5rem;
+    padding: 15px 62px;
+    border-radius:10px;
+  }
+
+}
+@media only screen and (min-width:1060px) and (max-width:1220px){
+  
+  .herobtns{
+    top: 43%;
+    left:4.5%;
+  }
+  .herobtn{
+    font-size: 1.7rem;
+    padding: 12px 60px;
+    border-radius:10px;
+  }
+
+}
+@media only screen and (min-width:768px) and (max-width:1060px){
+  
+  .herobtns{
+    top: 36%;
+    left:3.5%;
+  }
+  .herobtn{
+    font-size: 1.45rem;
+    padding: 10px 45px;
+    border-radius:10px;
+  }
+}
+@media only screen and (min-width:1500px) and (max-width:1920px)  {
+  
+  .herobtns{
+    top: 58%;
+    left:5%;
+  }
+  .herobtn{
+    font-size: 1.8rem;
+    padding: 18px 74px;
+    border-radius:12px;
+  }
+
+}
+@media only screen and (max-width:768px){
+    .headline-2 h3{
+      font-size: 1.15rem;
+      font-weight: 500;
+    }
 }

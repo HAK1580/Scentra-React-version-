@@ -256,34 +256,37 @@ nav ul li a:hover::after {
   }
 
 }
+/* RESPONSIVE FOR LARGE SCREENS  */
 
-@media only screen and (min-width:1228px){
+@media only screen and (min-width:1228px) and (max-width:1440px){
   .nav-left{
     position: relative;
-    left: 8rem;
+    left: 7rem;
   }
   .nav-right{
     position: relative; 
-    right: 8rem;
+    right: 7rem;
   }
   nav ul li a{
-   font-size: 1.1rem;     
+   font-size: 1.2rem;     
   }
   .scentra-middle{
-    font-size: 4.4rem;
+    font-size: 4.7rem;
   }
 
   .nav-left{
-    margin: 0px 2px;
+    margin: 0px 8px;
   }
   .nav-right{
-    margin: 0px 3px;
+    margin: 0px 8px;
   }
   .search-icon{
     top: 2rem;
   }
   .logo{
-    width: 250px;
+    width: 220px;
+    left: -60px;
+    top: -1rem;
     
   }
 }
@@ -361,25 +364,27 @@ nav ul li a:hover::after {
 }
 @media only screen and (min-width:768px) and (max-width:997px){
   .scentra-middle{
-    font-size: 2.8rem;
+    font-size: 2.9rem;
     /* margin: 0px 12rem; */
   }
   
   .logo{
     width: 140px;
     left: -40px;
-    top: -0.8rem;
+    top: -0.7rem;
   }
   nav ul li a{
     font-size: 0.7rem;
   }
   .nav-left{
     position: relative;
-    left: 3rem ;
+    left: 4.5rem ;
+    margin: 0px 4px;
   }
   .nav-right{
     position: relative; 
-    right: 3rem;
+    right: 4.5rem;
+    margin: 0px 4px;
   }
   .search-icon{
     width: 25px;
