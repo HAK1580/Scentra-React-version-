@@ -255,6 +255,135 @@ nav ul li a:hover::after {
     width: 30px;
   }
 
+}
 
+@media only screen and (min-width:1228px){
+  .nav-left{
+    position: relative;
+    left: 8rem;
+  }
+  .nav-right{
+    position: relative; 
+    right: 8rem;
+  }
+  nav ul li a{
+   font-size: 1.1rem;     
+  }
+  .scentra-middle{
+    font-size: 4.4rem;
+  }
 
+  .nav-left{
+    margin: 0px 2px;
+  }
+  .nav-right{
+    margin: 0px 3px;
+  }
+  .search-icon{
+    top: 2rem;
+  }
+  .logo{
+    width: 250px;
+    
+  }
+}
+@media only screen and (min-width:1082px) and (max-width:1228px){
+  .scentra-middle{
+    font-size: 3.6rem;
+  }
+  .logo{
+    width: 200px;
+  }
+  nav ul li a{
+    font-size: 1.02rem;
+  }
+  .nav-left{
+    margin: 0px 6px;
+  }
+  .search-icon{
+    width: 28px;
+    top: 2.1rem;
+  }
+  .nav-right{
+     margin: 0px 6px;
+  }
+  .logo{
+    width: 220px;
+    left: -60px;
+  }
+  .search-icon{
+    width: 28px;
+    top: 1.8rem;
+  }
+
+ .nav-left{
+    position: relative;
+    left: 8rem;
+  }
+  .nav-right{
+    position: relative; 
+    right: 8rem;
+  }
+  
+  
+  
+}
+
+@media only screen and (min-width:997px) and (max-width:1082px){
+  .nav-left{
+     position: relative;
+     left: 9rem;
+   }
+   .nav-right{
+     position: relative; 
+     right: 9rem;
+   }
+  .scentra-middle{
+    font-size: 3.1rem;
+  }
+  .logo{
+    width: 180px;
+    left: -40px;
+  }
+  nav ul li a{
+    font-size: 0.85rem;
+  }
+  .nav-left{
+    margin: 0px 6px;
+  }
+  .search-icon{
+    width: 26px;
+    top: 1.9rem;
+  }
+  .nav-right{
+     margin: 0px 6px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:997px){
+  .scentra-middle{
+    font-size: 2.8rem;
+    /* margin: 0px 12rem; */
+  }
+  
+  .logo{
+    width: 140px;
+    left: -40px;
+    top: -0.8rem;
+  }
+  nav ul li a{
+    font-size: 0.7rem;
+  }
+  .nav-left{
+    position: relative;
+    left: 3rem ;
+  }
+  .nav-right{
+    position: relative; 
+    right: 3rem;
+  }
+  .search-icon{
+    width: 25px;
+    top: 1.4rem;
+    right:10px;
+  }
 }

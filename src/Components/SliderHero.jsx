@@ -8,8 +8,8 @@ const SliderHero = ({search,setSearch}) => {
   
  const imgs=[
     "/Scentra-React-version-/IMGS/Banners/1.jpg",
-    // "/Scentra-React-version-/IMGS/Banners/2.jpg",
-    // "/Scentra-React-version-/IMGS/Banners/4.jpg",
+    "/Scentra-React-version-/IMGS/Banners/2.jpg",
+    "/Scentra-React-version-/IMGS/Banners/4.jpg",
   ]
  
   const[current,setCurrent]=useState(0)
@@ -34,10 +34,10 @@ const SliderHero = ({search,setSearch}) => {
     <div className="slider">
         {imgs.map((image,i)=>  <img key={i} src={image} alt="" className={`${i===current?"active":""}`}/> )}
       
-    </div>
     <div className="herobtns">
       <button className='herobtn'  >Buy Scents</button>
 
+    </div>
     </div>
   
     </div>
