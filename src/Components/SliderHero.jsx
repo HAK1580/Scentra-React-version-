@@ -17,16 +17,13 @@ const SliderHero = ({hero,setHero}) => {
     setCurrent((prev)=>prev===imgs.length-1?0:prev+1)
   }
 
-  useEffect(()=>{
-   const timer =setTimeout(nextImg,10000);
+  useEffect(() => {
+  if (hero) return; // stop timer if hidden
 
-   return function cleanup(){
-      clearTimeout(timer)
-   }
+  const timer = setTimeout(nextImg, 10000);
+  return () => clearTimeout(timer);
+}, [current, imgs.length, hero]);
 
-
-
-  },[current,imgs.length])
   
   return (
     <div >

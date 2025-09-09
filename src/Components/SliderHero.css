@@ -368,7 +368,14 @@
     }
 }
 
+.hidden{
 
-  .hidden{
-    display: none;
-  }
+  opacity: 0;
+  visibility: hidden;   /* hides from screen readers + interaction */
+  pointer-events: none; /* no clicks */
+  position: absolute;   /* remove from document flow */
+  top: -15rem;
+  left: 0;
+  width: 100%;
+}
+

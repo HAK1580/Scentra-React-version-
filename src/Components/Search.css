@@ -1,8 +1,10 @@
 .search-box-div {
     position: relative;
-    top: -6.51rem;
+    /* border: 2px solid red ; */
+    top: -6.55rem;
   margin: -2rem auto;
-  overflow:hidden;
+  width: 100%;
+  overflow:hidden !important;
   height: 110vh;
   background-color: rgba(255, 255, 255, 0.238);
   

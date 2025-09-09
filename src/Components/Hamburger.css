@@ -1,8 +1,9 @@
 .menu{
   /* border: 2px solid red ; */
-  max-width:90vw;
+  max-width:88vw;
   position: relative;
   height: 80vh;
+  top: 0.1rem;
   background-color: rgba(255, 255, 255, 0.238);
   transition: all 0.5s ease-in !important; 
   z-index: 1;
@@ -11,10 +12,11 @@
   display: flex;
   /* border: 2px solid red ; */
   position: absolute;
-  top: 5.4rem;
+  top: 4.3rem;
+  left: -0.3rem;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1.8rem;
+  gap: 1.6rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -34,8 +36,8 @@
   border: 0.5px solid rgb(130, 127, 121);
   width: 91%;
   position: absolute;
-  left: 1rem;
-  top: 3.5rem;
+  left: 0.85rem;
+  top: 2.6rem;
   margin: 0px auto ;
 }
 .nav ul{
