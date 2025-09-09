@@ -17,8 +17,8 @@ const Search = ({search,setSearch,hero,setHero}) => {
  <input className='search-here' type="search" placeholder='Search'/>
  <div className="search-icons">
 
- <img width={35} src="/Scentra-React-version-/IMGS/icons/search.svg" alt="" />
- <img className='cross-img'  onClick={handleCross}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />
+ <img width={35} src="/IMGS/icons/search.svg" alt="" />
+ <img className='cross-img'  onClick={handleCross}  src="/IMGS/icons/cross.svg" alt="" />
  </div>
 
 
