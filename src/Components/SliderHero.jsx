@@ -1,10 +1,10 @@
 import React from 'react'
 import './SliderHero.css'
 import { useState,useEffect } from 'react'
+import Navbar from './Navbar'
+import Search from './Search'
 
-const SliderHero = ({search,setSearch}) => {
-
-
+const SliderHero = ({hero,setHero}) => {
   
  const imgs=[
     "/Scentra-React-version-/IMGS/Banners/1.jpg",
@@ -30,7 +30,7 @@ const SliderHero = ({search,setSearch}) => {
   
   return (
     <div >
-    <div className="hero">
+    <div className={`hero ${hero?'hidden':""} ` }>
     <div className="slider">
         {imgs.map((image,i)=>  <img key={i} src={image} alt="" className={`${i===current?"active":""}`}/> )}
       
@@ -43,7 +43,7 @@ const SliderHero = ({search,setSearch}) => {
     </div>
     
 
-    <div className="headline-2">
+    <div className={`headline-2 ${hero?'hidden':""}  `}>
       <div className="headlinetxt2">
         <h3>Scentra</h3>
         <h3>Scentra</h3>

@@ -2,7 +2,14 @@ import React from 'react'
 import './Search.css'
 import { useState } from 'react'
 
-const Search = ({search,setSearch}) => {
+const Search = ({search,setSearch,hero,setHero}) => {
+
+  function handleCross(){
+    
+    setHero(false);
+    setSearch(!search)
+
+  }
   return (
     <>
  <div className="search-box-div">
@@ -11,7 +18,7 @@ const Search = ({search,setSearch}) => {
  <div className="search-icons">
 
  <img width={35} src="/Scentra-React-version-/IMGS/icons/search.svg" alt="" />
- <img className='cross-img'  onClick={()=>setSearch(!search)}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />
+ <img className='cross-img'  onClick={handleCross}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />
  </div>
 
 

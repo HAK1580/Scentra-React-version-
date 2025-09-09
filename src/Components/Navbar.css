@@ -397,9 +397,6 @@ nav ul li a:hover::after {
 .cross-menue{
   width: 30px;
 }
-.hampic{
-  /* display: none; */
-}
 .hamburger{
-  
+  width: 35px;
 }

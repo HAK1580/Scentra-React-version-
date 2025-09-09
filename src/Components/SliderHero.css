@@ -110,9 +110,6 @@
   }
 
 }
-.hero-hidden{
-  display: none;
-}
 @media only screen and (min-width:620px) and (max-width:768px){
   
    .hero{
@@ -370,3 +367,8 @@
       font-weight: 500;
     }
 }
+
+
+  .hidden{
+    display: none;
+  }

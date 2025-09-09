@@ -73,33 +73,3 @@ body {
   }
 }
 
-/* HABRUGER CSS HERE */
-
-.menu{
-  /* border: 2px solid red ; */
-  max-width:85vw;
-  height: 80vh;
-  background-color: rgba(255, 255, 255, 0.238);
-  transition: all 0.5s ease-in !important; 
-  pointer-events: none;
-  z-index: 100;
-}
-.menu ul{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-.menu ul li{
-  list-style-type: none;
-}
-.menu ul li a{
-  letter-spacing:2px;
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  display: block;
-}

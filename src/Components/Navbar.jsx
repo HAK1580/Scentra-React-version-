@@ -2,16 +2,23 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import Search from "./Search";
 import  Hamburger from "./Hamburger";
+import  '../App.jsx'
 import SliderHero from "./SliderHero";
 
 
-const Navbar = () => {
+const Navbar = ({hero,setHero}) => {
+
   const [search, setSearch] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   function handleClick() {
-    
     setMenuOpen(!menuOpen);
+    setHero(!hero)
+  }
+  function handleSearchClick(){
+    setSearch(!search);
+    setHero(!hero);
+
   }
 
   // playAnimation = true only while we want the intro animation to run
@@ -97,7 +104,7 @@ const Navbar = () => {
 
 
         <img
-          onClick={() => setSearch(!search)}
+          onClick={handleSearchClick }
           className="search-icon"
           width={32}
           src="/Scentra-React-version-/IMGS/icons/search.svg"
@@ -111,7 +118,7 @@ const Navbar = () => {
 
       {/* search wrapper — show/hide via class (keeps component mounted) */}
       <div className={`search-wrapper ${search ? "show" : "hide"}`}>
-        <Search search={search} setSearch={setSearch} />
+        <Search hero={hero} setHero={setHero}   search={search} setSearch={setSearch} />
 
       </div>
     

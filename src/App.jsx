@@ -8,14 +8,15 @@ import Hamburger from './Components/Hamburger'
 
 
 function App() {
-   
+   const[hero,setHero]=useState(false)
  
 
   return (
     <>
     <Headline />  
-     <Navbar />
-    <SliderHero /> 
+     <Navbar hero={hero} setHero={setHero} />
+    <SliderHero  hero={hero} setHero={setHero}   /> 
+     
     
            
       
