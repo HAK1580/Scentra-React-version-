@@ -70,17 +70,17 @@ const Navbar = ({hero,setHero}) => {
           <img
             className="logo"
             width={300}
-            src="/Scentra-React-version-/IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
+            src="/IMGS/logo/logo-fotor-bg-remover-2025080510633.webp"
             alt=""
           />
           
     {menuOpen &&
-<img onClick={handleClick} className={`hamburger cross-menue`}  src="/Scentra-React-version-/IMGS/icons/cross.svg" alt="" />  
+<img onClick={handleClick} className={`hamburger cross-menue`}  src="/IMGS/icons/cross.svg" alt="" />  
 
     }
            
  {!menuOpen&&
-    <img onClick={handleClick}  className={`hamburger`} src="/Scentra-React-version-/IMGS/icons/hamburger.svg" alt="" /> 
+    <img onClick={handleClick}  className={`hamburger`} src="/IMGS/icons/hamburger.svg" alt="" /> 
  }
 
       
@@ -107,7 +107,7 @@ const Navbar = ({hero,setHero}) => {
           onClick={handleSearchClick }
           className="search-icon"
           width={32}
-          src="/Scentra-React-version-/IMGS/icons/search.svg"
+          src="/IMGS/icons/search.svg"
           alt=""
         />
       

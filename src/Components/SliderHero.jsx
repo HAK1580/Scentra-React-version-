@@ -1,15 +1,14 @@
 import React from 'react'
 import './SliderHero.css'
 import { useState,useEffect } from 'react'
-import Navbar from './Navbar'
-import Search from './Search'
+import MiddleHeadline from './MiddleHeadline'
 
 const SliderHero = ({hero,setHero}) => {
   
  const imgs=[
-    "/Scentra-React-version-/IMGS/Banners/1.jpg",
-    "/Scentra-React-version-/IMGS/Banners/2.jpg",
-    "/Scentra-React-version-/IMGS/Banners/4.jpg",
+    "/IMGS/Banners/1.jpg",
+    "/IMGS/Banners/2.jpg",
+    "/IMGS/Banners/4.jpg",
   ]
  
   const[current,setCurrent]=useState(0)
@@ -36,45 +35,13 @@ const SliderHero = ({hero,setHero}) => {
 
     </div>
     </div>
+
+    <MiddleHeadline hero={hero} />
   
     </div>
     
 
-    <div className={`headline-2 ${hero?'hidden':""}  `}>
-      <div className="headlinetxt2">
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-        <h3>Scentra</h3>
-      </div>
-
-
-
-    </div>
     
-  
-  
-
     </div>
   )
 }

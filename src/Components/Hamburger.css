@@ -12,11 +12,11 @@
   display: flex;
   /* border: 2px solid red ; */
   position: absolute;
-  top: 4.3rem;
+  top: 5.6rem;
   left: -0.3rem;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1.6rem;
+  gap: 1.8rem;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -37,7 +37,7 @@
   width: 91%;
   position: absolute;
   left: 0.85rem;
-  top: 2.6rem;
+  top: 3.6rem;
   margin: 0px auto ;
 }
 .nav ul{
