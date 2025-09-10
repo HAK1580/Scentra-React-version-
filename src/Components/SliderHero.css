@@ -83,10 +83,9 @@
 .headlinetxt2 {
   /* border: 2px solid red ; */
   display: inline-flex;
-  animation: headline2 11s linear infinite;
+  animation: headline2 20s linear infinite;
   scroll-behavior: smooth;
   gap: 10rem;
-  
 }
 .headline-2 {
   /* border: 2px solid red ; */
