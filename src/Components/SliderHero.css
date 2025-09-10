@@ -83,9 +83,9 @@
 .headlinetxt2 {
   /* border: 2px solid red ; */
   display: inline-flex;
-  animation: headline2 20s linear infinite;
+  animation: headline2 22s linear infinite;
   scroll-behavior: smooth;
-  gap: 10rem;
+  gap: 12rem;
 }
 .headline-2 {
   /* border: 2px solid red ; */
@@ -99,7 +99,7 @@
 
 
 .headline-2 h3 {
-  font-size: 2.4rem;
+  font-size: 2.4vw;
   font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   font-weight: 100;
