@@ -18,8 +18,9 @@ const Navbar = ({hero,setHero}) => {
   function handleSearchClick(){
     setSearch(!search);
     setHero(!hero);
-
+    
   }
+  
 
   // playAnimation = true only while we want the intro animation to run
   const [playAnimation, setPlayAnimation] = useState(true);
@@ -105,7 +106,7 @@ const Navbar = ({hero,setHero}) => {
 
         <img
           onClick={handleSearchClick }
-          className="search-icon"
+          className={`search-icon  ${menuOpen?"hidesearch":""}  `}
           width={32}
           src="/IMGS/icons/search.svg"
           alt=""

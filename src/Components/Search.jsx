@@ -6,7 +6,7 @@ const Search = ({search,setSearch,hero,setHero}) => {
 
   function handleCross(){
     
-    setHero(false);
+    setHero(!hero);
     setSearch(!search)
 
   }

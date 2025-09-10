@@ -401,3 +401,7 @@ nav ul li a:hover::after {
 .hamburger{
   width: 35px;
 }
+.hidesearch{
+  opacity: 0;
+  visibility: hidden;
+}
