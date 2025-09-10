@@ -3,8 +3,9 @@
   display: flex;
   overflow: hidden;
   position: relative;
-    animation: animateheaderdiv 2s ease-in; 
-    height: 1080px; /* ek fixed height de, warna slider collapse karega */ 
+  animation: animateheaderdiv 2s ease-in; 
+  height: 1080px; 
+  max-width: 100%;
   }
   .hero{
     /* border: 2px solid red ; */
