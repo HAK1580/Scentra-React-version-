@@ -1,5 +1,6 @@
 .menu{
   /* border: 2px solid red ; */
+  overflow: hidden;
   max-width:88vw;
   position: relative;
   height: 80vh;
