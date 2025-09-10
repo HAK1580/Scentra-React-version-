@@ -84,10 +84,11 @@
   
 }
 .headline-2 {
-  /* border: 1px solid  ; */
+  /* border: 2px solid red ; */
   /* margin: 5rem 0px 0px 0px; */
   scroll-behavior: smooth;
   overflow: hidden;
+  /* margin: 3vh auto; */
   white-space: nowrap;
 
 }

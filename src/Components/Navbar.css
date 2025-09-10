@@ -60,7 +60,8 @@ nav ul li a:hover::after {
 
 .scentra-middle {
 
-    font-size: 4.62rem;
+    
+    font-size: 5vw;
     color: #e8d5a9;
     letter-spacing: 0.8px;
     text-align: center;

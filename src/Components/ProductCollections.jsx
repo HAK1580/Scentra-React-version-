@@ -2,7 +2,7 @@ import React from 'react'
 import './ProductCollections.css'
 import { useState } from 'react'
 
-const ProductCollections = () => {
+const ProductCollections = ({hero}) => {
     const[menhover,setMenhover]=useState(false)
     const[womenhover,setWomenhover]=useState(false)
    
@@ -10,7 +10,7 @@ const ProductCollections = () => {
 
 
   return (
-    <>
+    <div className={`hero ${hero?'hidden':""} ` }  >
 
     <div className="product-collection">
         <h1>OUR PRODUCT COLLECTIONS</h1>
@@ -45,7 +45,7 @@ const ProductCollections = () => {
     </div>
     
     
-    </>
+    </div>
   )
 }
 

@@ -16,7 +16,7 @@ const HomePage = () => {
      <Headline />  
      <Navbar hero={hero} setHero={setHero} />
     <SliderHero  hero={hero} setHero={setHero}   /> 
-     <ProductCollections />
+     <ProductCollections hero={hero}    />
     
            
 

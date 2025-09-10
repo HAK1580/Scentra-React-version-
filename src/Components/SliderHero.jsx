@@ -36,9 +36,9 @@ const SliderHero = ({hero,setHero}) => {
     </div>
     </div>
 
-    <MiddleHeadline hero={hero} />
-  
     </div>
+  
+    <MiddleHeadline hero={hero} />
     
 
     
