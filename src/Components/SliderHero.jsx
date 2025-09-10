@@ -19,7 +19,7 @@ const SliderHero = ({hero,setHero}) => {
   useEffect(() => {
   if (hero) return; // stop timer if hidden
 
-  const timer = setTimeout(nextImg, 10000);
+  const timer = setTimeout(nextImg,7000);
   return () => clearTimeout(timer);
 }, [current, imgs.length, hero]);
 
