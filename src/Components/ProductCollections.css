@@ -1,0 +1,102 @@
+.product-collection {
+  /* border: 2px solid white; */
+  margin: 10rem auto;
+}
+
+.product-collection h1 {
+  /* border: 2px solid red ; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #e8d5a9;
+  font-size: 3.8vw;
+  letter-spacing: 1.5px;
+}
+
+.product-collection-box {
+  width: 96%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+
+.product-collection-item {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.product-collection-item img {
+  border: 1px solid #d4af3723;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: transform 350ms cubic-bezier(.2, .8, .2, 1),
+    filter 350ms cubic-bezier(.2, .8, .2, 1);
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  
+}
+
+.product-btn-div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  top: 54%;
+  left: 15%;
+}
+.product-btn {
+  padding: 1.37vh 1vw;
+  cursor: pointer;
+  font-size: 1.03rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  border-radius: 6px;
+  border: none;
+  border: 0.2px solid #d4af37a7;
+  letter-spacing: 2.7px;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: white;
+}
+.front-img{
+ transition: all 1s ease-out;
+}
+
+.product-btn:hover {
+  background-color: #d4af37df;
+  color: #000000;
+  border: 1px solid #d4af37a7;
+  transition: all 0.1s ease-in-out;
+}
+.product-btn:hover {
+  transform: scale(1.07);
+  transition: all 0.3s ease-in-out;
+  color: #000000;
+}
+
+.product-collection-item:hover img,
+.product-collection-item:focus-within img {
+  transform: scale(1.08);
+  /* tweak 1.03 - 1.12 to taste */
+  filter: brightness(1.02);
+  /* tiny pop — optional */
+  transition: all 0.8s ease-in-out;
+}
+.product-collection-item{
+    /* border: 2px solid red ; */
+    position: relative;
+}
+@media only  screen and (max-width:768px) {
+  .product-collection h1{
+    font-size: 6vw;
+    
+  }
+  
+}

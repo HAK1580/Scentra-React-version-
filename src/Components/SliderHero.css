@@ -27,7 +27,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  display: block;
+  max-width: 100%;
   object-fit: cover; /* images resize ke liye */
   opacity: 0;
   transition: opacity 1.5s ease-in-out;

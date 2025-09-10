@@ -1,24 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import React from 'react'
-import Navbar from './Components/Navbar'
-import Headline from './Components/Headline'
-import SliderHero from './Components/SliderHero'
-import Hamburger from './Components/Hamburger'
+import HomePage from './Pages/HomePage'
+
 
 
 function App() {
-   const[hero,setHero]=useState(false)
  
 
   return (
     <>
-    <Headline />  
-     <Navbar hero={hero} setHero={setHero} />
-    <SliderHero  hero={hero} setHero={setHero}   /> 
-     
-    
-           
+    <HomePage />
+  
       
 
     </>
